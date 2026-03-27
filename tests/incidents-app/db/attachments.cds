@@ -1,5 +1,5 @@
 using {sap.capire.incidents as my} from './schema';
-using {Attachments} from '@cap-js/attachments';
+using {Attachments} from '@msg-group/attachments';
 
 extend my.Incidents with {
   @Validation.MaxItems: 3

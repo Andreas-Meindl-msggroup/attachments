@@ -1,7 +1,7 @@
 {
   "name": "@msg-group/attachments",
   "description": "Fork of CAP cds-plugin providing image and attachment storing out-of-the-box.",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "repository": "cap-js/attachments",
   "author": "SAP SE (https://www.sap.com)",
   "homepage": "https://cap.cloud.sap/",
@@ -53,28 +53,28 @@
       },
       "kinds": {
         "malwareScanner-mock": {
-          "model": "@cap-js/attachments/srv/malwareScanner-mocked"
+          "model": "@msg-group/attachments/srv/malwareScanner-mocked"
         },
         "malwareScanner-mocked": {
-          "model": "@cap-js/attachments/srv/malwareScanner-mocked"
+          "model": "@msg-group/attachments/srv/malwareScanner-mocked"
         },
         "malwareScanner-btp": {
-          "model": "@cap-js/attachments/srv/malwareScanner"
+          "model": "@msg-group/attachments/srv/malwareScanner"
         },
         "attachments-db": {
-          "impl": "@cap-js/attachments/srv/basic"
+          "impl": "@msg-group/attachments/srv/basic"
         },
         "attachments-standard": {
-          "impl": "@cap-js/attachments/srv/standard"
+          "impl": "@msg-group/attachments/srv/standard"
         },
         "attachments-s3": {
-          "impl": "@cap-js/attachments/srv/aws-s3"
+          "impl": "@msg-group/attachments/srv/aws-s3"
         },
         "attachments-azure": {
-          "impl": "@cap-js/attachments/srv/azure-blob-storage"
+          "impl": "@msg-group/attachments/srv/azure-blob-storage"
         },
         "attachments-gcp": {
-          "impl": "@cap-js/attachments/srv/gcp"
+          "impl": "@msg-group/attachments/srv/gcp"
         }
       },
       "serviceManager": {

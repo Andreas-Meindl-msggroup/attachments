@@ -3,7 +3,7 @@ using {
   managed,
   sap.common.CodeList
 } from '@sap/cds/common';
-using {Attachments} from '@cap-js/attachments';
+using {Attachments} from '@msg-group/attachments';
 
 namespace sap.capire.incidents;
 
