@@ -1,7 +1,7 @@
 {
-  "name": "@cap-js/attachments",
-  "description": "CAP cds-plugin providing image and attachment storing out-of-the-box.",
-  "version": "3.10.0",
+  "name": "@msg-group/attachments",
+  "description": "Fork of CAP cds-plugin providing image and attachment storing out-of-the-box.",
+  "version": "0.0.0",
   "repository": "cap-js/attachments",
   "author": "SAP SE (https://www.sap.com)",
   "homepage": "https://cap.cloud.sap/",
@@ -15,11 +15,13 @@
     "srv"
   ],
   "scripts": {
+    "build:releasePatch": "npm pack && npm version patch",
     "lint": "npx eslint .",
     "test": "npx jest --silent=true",
     "test:postgres": "CDS_ENV=pg npx jest --silent=true",
     "deploy:postgres": "cd ./tests/incidents-app && cds deploy --profile pg",
-    "prepare": "husky"
+    "prepare": "husky",
+    "version": "changelog-updater"
   },
   "dependencies": {
     "@aws-sdk/client-s3": "^3.993.0",
